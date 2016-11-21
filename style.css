@@ -1,0 +1,155 @@
+/*
+Theme Name: Typist Child
+Version: 1.0.0
+Template: typist
+Text Domain: typist
+Domain Path: /lang
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Description: Clean responsive minimalist theme focused on typography. Out of the box includes 7 color schemes,
+3 layouts,
+17 font options,
+5 site widths,
+2 widget areas,
+drop-down menu,
+social icons,
+jetpack,
+buddypress and bbpress support.The Typist is clean,
+fast and looks great on mobiles. Perfect for personal and corporate blogs. It is SEO-optimised,
+translatable and built according to HTML5. Continually updated and supported.
+Tags: blog,
+news,
+one-column,
+two-columns,
+right-sidebar,
+left-sidebar,
+custom-background,
+custom-colors,
+custom-menu,
+translation-ready,
+threaded-comments,
+post-formats,
+sticky-post,
+full-width-template
+*/
+/*
+Contents:
+0. Custom colors
+1. Home Page Gallery Slideshow
+*/
+
+/*
+0. Custom colors
+*/
+
+/*theme colors*/
+
+h1 a,
+h2 a,
+h3 a,
+h4 a,
+h5 a,
+h6 a,
+.toggles a,
+.toggles a:link,
+.toggles a:visited {color: #041B30;}
+
+body,
+input,
+textarea,
+.postline,
+footer.postline a,
+.format-status .postcontent,
+.format-quote .postcontent .quote,
+.fa-quote-left,
+.reply,
+.reply a,
+.comment-meta a,
+#menuline li li a,
+#menuline li li a:hover {color: #2c2c2c;} 
+
+input,
+textarea,
+.wp-editor-area {border-color: #32c2c2c0e;}
+
+a {color: #999;}
+
+#menuline ul.sub-menu {background-color: #FFF;}
+
+a:active,
+a:focus,
+a:hover,
+footer.postline a:hover {color: #AA264B;}
+
+input:hover,
+textarea:hover,
+input:focus,
+textarea:focus,
+.sticky {border-color: #AA264B;}
+
+#menuline {background-color: #999;}
+
+.menu-toggle .fa-bars.active:before,
+#menuline a,
+#menuline a:hover {color: #FFF;}
+
+#logo h1 a {color: #041B30;}
+
+/*mono*/
+#mono a,
+#mono a:active,
+#mono a:focus,
+#mono a:hover,
+#mono footer.postline a:hover,
+#mono #menuline li li a,
+#mono #menuline li li a:hover,
+h1 a,
+h2 a,
+h3 a,
+h4 a,
+h5 a,
+h6 a,
+.toggles a,
+.toggles a:link,
+.toggles a:visited {color: #112E48;}
+
+#mono .postcontent a {text-decoration:underline;}
+
+#mono #menuline {background-color: #2c2c2c;}
+
+#mono .menu-toggle .fa-bars.active:before,
+#mono #menuline a,
+#mono #menuline a:hover,
+#mono .icons.active {color: #fff;}
+
+#mono #menuline a:before {border-color: #fff;}
+
+#mono input:hover,
+#mono textarea:hover,
+#mono input:focus,
+#mono textarea:focus,
+#mono .sticky,
+#mono .main-navigation ul ul,
+#mono .main-navigation ul ul li {border-color: #112E48;}
+
+
+/*
+1. Home Page Gallery Slideshow
+*/
+.home .page.format-gallery .postcontent {
+    margin: 0 0 2rem;
+    line-height: 1;
+}
+
+.home .page.format-gallery .slideshow-window.jetpack-slideshow,
+.home .page.format-gallery #n2-ss-2-align {
+    background-color: white;
+    background: url(images/declaration_independence-blue.jpg) center center no-repeat;
+    border: 0px;
+    top: -180px;
+}
+
+
+
+
+
