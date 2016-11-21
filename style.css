@@ -36,6 +36,8 @@ full-width-template
 Contents:
 0. Custom colors
 1. Home Page Gallery Slideshow
+2. Nav Menu
+3. Logo
 */
 
 /*
@@ -150,6 +152,63 @@ h6 a,
 }
 
 
+/*
+2. Nav Menu
+*/
+.nav_menu ul {
+  list-style: none;
+  background-color: #3C5C78;
+  text-align: center;
+  padding: 0;
+  margin: 0;
+}
+.nav_menu li {
+  font-family: 'Fjalla One', sans-serif;
+  font-size: 1.8em;
+  line-height: 40px;
+  height: 40px;
+  border-bottom: 1px solid #888;
+  padding: 0;
+}
+ 
+.nav_menu a,
+#mono .nav_menu a {
+  text-decoration: none;
+  color: #fff;
+  display: block;
+  transition: .3s background-color;
+}
+ 
+.nav_menu a:hover,
+#mono .nav_menu a:hover {
+  background-color: #fff;
+  color: #112E48;;
+}
+ 
+.nav_menu a.active {
+  background-color: #3C5C78;
+  color: #021323;
+  cursor: default;
+}
+ 
+@media screen and (min-width: 600px) {
+  .nav_menu li {
+    width: 120px;
+    border-bottom: none;
+    height: 50px;
+    line-height: 50px;
+    font-size: 1.6em;
+  }
+}
 
+
+/*
+3. Logo
+*/
+
+
+#logo {
+    word-wrap: break-word;
+}
 
 
