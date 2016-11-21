@@ -16,3 +16,7 @@ endif;
 
 add_action( 'init', 'typist_child_setup' ); //setup ends
 
+add_action( 'after_setup_theme', 'register_page_menu' );
+function register_page_menu() {
+  register_nav_menu( 'main', __( 'Main Menu', 'typist' ) );
+}
