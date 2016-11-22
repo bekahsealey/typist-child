@@ -144,7 +144,7 @@ h6 a,
 }
 
 .home .page.format-gallery .slideshow-window.jetpack-slideshow,
-.home .page.format-gallery #n2-ss-2-align {
+.home .page.format-gallery .n2-ss-align {
     background-color: white;
     background: url(images/declaration_independence-blue.jpg) center center no-repeat;
     border: 0px;
@@ -182,7 +182,7 @@ h6 a,
 .nav_menu a:hover,
 #mono .nav_menu a:hover {
   background-color: #fff;
-  color: #112E48;;
+  color: #112E48;
 }
  
 .nav_menu a.active {
