@@ -156,70 +156,73 @@ h6 a,
 /*
 2. Nav Menu
 */
-nav {
-  margin-bottom: 3rem;
-}
 .nav_menu ul {
-  list-style: none;
-  background-color: #3C5C78;
-  text-align: center;
-  padding: 0;
-  margin: 0;
+    list-style: none;
+    background-color: #3C5C78;
+    text-align: center;
+    padding: 0;
+    margin: 0;
+    display: flex;
 }
-.nav_menu ul ul {
+
+.nav_menu li ul {
     display: none;
 }
-.nav_menu li:hover ul {
-    display: block;
-    position: absolute;
-    top: 100%;
-    left: 0;
-    border-top: transparent solid 50px;
-    background-clip: content-box;
-    z-index: 1000;
-}
 .nav_menu li {
-  font-family: 'Fjalla One', sans-serif;
-  font-size: 1.8rem;
-  line-height: 40px;
-  height: 40px;
-  border-bottom: 1px solid #888;
-  padding: 0;
-  position: relative;
+    font-family: 'Fjalla One', sans-serif;
+    font-size: 1.8rem;
+    border-bottom: 1px solid #888;
+    padding: 0;
+    position: relative;
+    line-height: 40px;
+    height: 40px;
 }
 .nav_menu li li a {
-  font-size: 1.2rem;
-  border-bottom: 1px solid #888;
+    font-size: 1.2rem;
+    border-bottom: 1px solid #888;
 }
 .nav_menu a,
 #mono .nav_menu a {
-  text-decoration: none;
-  color: #fff;
-  display: block;
-  transition: .3s background-color;
+    text-decoration: none;
+    color: #fff;
+    display: block;
+    transition: .3s background-color;
 }
  
 .nav_menu a:hover,
 #mono .nav_menu a:hover {
-  background-color: #fff;
-  color: #112E48;
+    background-color: #fff;
+    color: #112E48;
 }
  
 .nav_menu a.active {
-  background-color: #3C5C78;
-  color: #021323;
-  cursor: default;
+    background-color: #3C5C78;
+    color: #021323;
+    cursor: default;
 }
  
-@media screen and (min-width: 600px) {
-  .nav_menu li {
-    width: 150px;
-    border-bottom: none;
-    height: 50px;
-    line-height: 50px;
-    font-size: 1.6rem;
-    display: inline-block;
-  }
+@media screen and (min-width: 768px) {
+    .nav_menu li {
+        border-bottom: none;
+        font-size: 1.6rem;
+        height: 50px;
+        line-height: 50px;
+        flex: 1 1 auto;
+    }
+
+    .nav_menu li:hover ul {
+        display: block;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        background-clip: content-box;
+        z-index: 1000;
+        width: 100%;
+        text-align: center;
+    } 
+    .nav_menu li li {
+        display: block;
+    }
 }
 
 /*
@@ -228,8 +231,12 @@ nav {
 
 
 #logo {
-    word-wrap: break-word;
+        word-wrap: break-word;
 }
 
 
-
+@media screen and (max-width: 768px) {
+    #logo {
+        font-size: .6em;
+    } 
+}
